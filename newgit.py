@@ -8,8 +8,10 @@ check(90)
 class Class:
     var = 24  #class variable 
     def __init__(self,name ,where):
-        self.where = where #instance variable 
-    def check(self,name ,nan):
         self.name = name 
-        self.nan = nan
+        self.where = where #instance variable 
+    def check(self):
+        print(self.name ,"found in ",self.where)
+C = Class("name","addis")
+C.check()
 
