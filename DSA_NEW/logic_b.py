@@ -11,3 +11,20 @@ class Solution:
         return (area1+area2) - intsec 
 S = Solution() 
 print(S.computeArea(-3,0,3,4,0,-1,9,2))
+
+# Sieve of Eratosthenes question of finding the prime up to n
+class solution:
+    def sieve(self ,n):
+        l =[]
+        for i in range(2,n):
+            check = True
+            for j in range(2,i-1):
+                if i%j==0:
+                    check = False
+                    break
+            if check:
+                l.append(i)
+        return l 
+            
+s = solution()
+print(s.sieve(10))
