@@ -28,3 +28,22 @@ class solution:
             
 s = solution()
 print(s.sieve(10))
+
+#some basic problems using the array concept DSA new era
+
+#Leaders in the array
+def check_l(n:list)->list:
+    l = []
+    i = 0
+    while i<len(n)-1:
+        for j in range(i+1,len(n)):
+            if n[i]<n[j]:
+                break 
+        else:
+            l.append(n[i])
+        i+=1
+    return l
+print(check_l([16, 17, 4, 3, 5, 2]))
+
+
+print("jesus is lord")
