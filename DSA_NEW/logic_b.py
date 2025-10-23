@@ -45,5 +45,17 @@ def check_l(n:list)->list:
     return l
 print(check_l([16, 17, 4, 3, 5, 2]))
 
+#check wheather sorted or not 
+def sorted_check(l:list)->bool:
+    i = 0
+    while i<len(l)-1:
+        j = i+1
+        if l[i]>l[j]:
+            return False
+        i+=1
+    return True 
+
+print(sorted_check([10, 20, 30, 40, 50]))
+
 
 print("jesus is lord")
