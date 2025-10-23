@@ -57,5 +57,18 @@ def sorted_check(l:list)->bool:
 
 print(sorted_check([10, 20, 30, 40, 50]))
 
+# genarating all possible  subarray 
+def genall(l: list) -> list:
+    all_subarrays = []
+    for i in range(len(l)):
+        for j in range(i, len(l)):
+            temp = []
+            for k in range(i, j + 1):
+                temp.append(l[k])
+            all_subarrays.append(temp)
+    return all_subarrays
+
+print(genall([1, 2, 3]))
+
 
 print("jesus is lord")
